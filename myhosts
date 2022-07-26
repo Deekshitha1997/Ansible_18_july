@@ -5,5 +5,5 @@
 
 
 [mywebservers:vars]
-mywebserversonubuntunode:apache2
+mywebserversonubuntunode:apache222
 mywebserversonredhatnode:httpd
