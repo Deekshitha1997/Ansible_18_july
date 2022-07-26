@@ -1,2 +1,9 @@
+[mywebservers]
+
 172.31.8.36
 172.31.9.127
+
+
+[mywebservers:vars]
+mywebserversonubuntunode:apache2
+mywebserversonredhatnode:httpd
