@@ -1,0 +1,33 @@
+---
+
+# installing java application on ubuntu and redhat nodes with the help of ubuntu master
+- hosts: all 
+  become: yes
+  tasks:
+
+   #TYPE1: hardcoding the name of software that is to be installed
+
+    #- name: install java on ubuntu nodes
+    #  apt:
+    #    name: openjdk-8-jre
+    #    state: present
+    #when: ansible_os_family=="Debian"  
+    #- name : install java on redhat nodes
+    #  yum:
+    #    name: java-1.8.0-openjdk
+    #    state: present
+    #    when: ansible_os_family=="RedHat"   
+
+   #TYPE2: calling from group_vars purpose of modularity
+     - name: install java on ubuntu nodes
+       apt: 
+         name: openjdk-8-jre
+         state: present
+     
+       when: ansible_os_family=="Debian"  
+
+     - name : install java on redhat nodes
+       yum:
+         name: java-1.8.0-openjdk
+         state: present
+       when: ansible_os_family=="RedHat"   
