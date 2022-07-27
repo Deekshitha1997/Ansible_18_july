@@ -1,0 +1,9 @@
+---
+
+[group]
+
+server1 java8
+server2 java8
+server3 java11
+server4 java8
+server5 java8
