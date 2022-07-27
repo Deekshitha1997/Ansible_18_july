@@ -15,4 +15,4 @@
      - name: copy static file inti asnsible node
        copy:
           src: mytestfile 
-          des: /home/ubuntu/mystaticfiles
+          dest: /home/ubuntu/mystaticfiles
