@@ -15,11 +15,11 @@
       apt:
         name: git
         state: present 
-      when: myfirstlinuxcommandresult.stderr == ""
+      when: myfirstlinuxcommandresult.stderr ==""
 
     - name: install tree
       apt:
         name: tree
         state: present 
-      when: myfirstlinuxcommandresult != ""
+      when: myfirstlinuxcommandresult !=""
             
