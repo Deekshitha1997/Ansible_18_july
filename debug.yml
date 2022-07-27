@@ -1,7 +1,7 @@
 --- 
 # executing linux commands
 
-- myhosts: 172.31.8.36
+- hosts: 172.31.8.36
   become: yes
   tasks:
     - name: i want to execute linux commmand
