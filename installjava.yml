@@ -21,13 +21,13 @@
    #TYPE2: calling from group_vars purpose of modularity
      - name: install java on ubuntu nodes
        apt: 
-         name: openjdk-8-jre
+         name: "{{myjavainstallonubuntu}}"
          state: present
      
        when: ansible_os_family=="Debian"  
 
      - name : install java on redhat nodes
        yum:
-         name: java-1.8.0-openjdk
+         name: "{{myjavainstallonredhat}}"
          state: present
        when: ansible_os_family=="RedHat"   
