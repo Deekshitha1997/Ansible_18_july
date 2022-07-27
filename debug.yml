@@ -1,8 +1,8 @@
 --- 
 # executing linux commands
 
-- myhosts:
-  become: 
+- myhosts: 172.31.8.36
+  become: yes
   tasks:
     - name: i want to execute linux commmand
       command: hostname -f 
