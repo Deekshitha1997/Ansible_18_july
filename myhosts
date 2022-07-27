@@ -4,6 +4,3 @@
 172.31.9.127
 
 
-[mywebservers:vars]
-mywebserversonubuntunode= apache2
-mywebserversonredhatnode= httpd
