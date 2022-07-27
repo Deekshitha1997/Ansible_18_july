@@ -11,3 +11,15 @@
     - name: i want to display my first linux command result
       debug: 
         msg: "{{myfirstlinuxcommandresult}}"
+    - name: install git
+      apt:
+        name: git
+        state: present 
+      when: myfirstlinuxcommandresult.stderr == ""
+
+    - name: install tree
+      apt:
+        name: tree
+        state: present 
+      when: myfirstlinuxcommandresult != ""
+            
