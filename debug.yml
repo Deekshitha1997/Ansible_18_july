@@ -1,0 +1,13 @@
+--- 
+# executing linux commands
+
+- myhosts:
+  become: 
+  tasks:
+    - name: i want to execute linux commmand
+      command: hostname -f 
+      register: myfirstlinuxcommandresult
+
+    - name: i want to display my first linux command result
+      debug: 
+        msg: "{{myfirstlinuxcommandresult}}"
