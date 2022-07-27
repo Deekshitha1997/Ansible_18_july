@@ -1,0 +1,11 @@
+--- 
+# creating files and handling files
+
+- hosts: 172.31.8.36
+  become: yes
+  tasks:
+    - name: i want to create a file
+      file:
+        path: /home/ubuntu/mytestfile
+        state: touch
+        
