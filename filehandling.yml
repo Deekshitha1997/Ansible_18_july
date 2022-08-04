@@ -35,7 +35,7 @@
 
   handlers:
      - name: startwebserver
-       service: 
+       apt:
           name: apache2
-          state: started
+          state: present
            
